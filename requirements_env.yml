@@ -1,0 +1,20 @@
+name: rain_australia
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12
+  - jupyter
+  - notebook
+  - ipykernel
+  - numpy
+  - pandas
+  - scikit-learn
+  - lightgbm
+  - seaborn=0.13.2
+  - matplotlib=3.9.2
+  - pip
+  - pip:
+      - ogboost
+      - category-encoders
