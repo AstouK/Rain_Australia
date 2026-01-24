@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f15112ac3df42fde7a9d22a725e724f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f15112ac3df42fde7a9d22a725e724f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f15112ac3df42fde7a9d22a725e724f = L.map(
+                "map_7f15112ac3df42fde7a9d22a725e724f",
+                {
+                    center: [-25.2744, 133.7751],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c40ac4d7dc6e5ef3422aec9b32edbac = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0c40ac4d7dc6e5ef3422aec9b32edbac.addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var marker_235cd1c74bf90793d9716cad062ef55c = L.marker(
+                [-34.9281805, 138.5999312],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_c76963f37efe510f8604d9cbf48324b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_079d614efa510a739df83918b1e2577d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbacd59200bcde99c5ddb04f9392e094 = $(`<div id="html_fbacd59200bcde99c5ddb04f9392e094" style="width: 100.0%; height: 100.0%;"><strong>Adelaide</strong><br>Rainfall: 1.57</div>`)[0];
+                popup_079d614efa510a739df83918b1e2577d.setContent(html_fbacd59200bcde99c5ddb04f9392e094);
+            
+        
+
+        marker_235cd1c74bf90793d9716cad062ef55c.bindPopup(popup_079d614efa510a739df83918b1e2577d)
+        ;
+
+        
+    
+    
+            marker_235cd1c74bf90793d9716cad062ef55c.bindTooltip(
+                `<div>
+                     Adelaide
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_235cd1c74bf90793d9716cad062ef55c.setIcon(icon_c76963f37efe510f8604d9cbf48324b9);
+            
+    
+            var marker_eed4a8862285df80fbed42e9484de59d = L.marker(
+                [-35.0247822, 117.883608],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_a93799c01d46de882f723c2cd8267944 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec9fee22ac1f9e25f41ae3a0f909918e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5581365b88ef728dcda6368a005cd971 = $(`<div id="html_5581365b88ef728dcda6368a005cd971" style="width: 100.0%; height: 100.0%;"><strong>Albany</strong><br>Rainfall: 2.26</div>`)[0];
+                popup_ec9fee22ac1f9e25f41ae3a0f909918e.setContent(html_5581365b88ef728dcda6368a005cd971);
+            
+        
+
+        marker_eed4a8862285df80fbed42e9484de59d.bindPopup(popup_ec9fee22ac1f9e25f41ae3a0f909918e)
+        ;
+
+        
+    
+    
+            marker_eed4a8862285df80fbed42e9484de59d.bindTooltip(
+                `<div>
+                     Albany
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eed4a8862285df80fbed42e9484de59d.setIcon(icon_a93799c01d46de882f723c2cd8267944);
+            
+    
+            var marker_4fb49bac903e7a880822b93bfa7a79f9 = L.marker(
+                [-36.0804766, 146.9162795],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_5169187892a50b208aaa9ca666bd3e1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7891c5498854d87fc050e804b1357781 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ed5f6d38299b2b85d1c637ca53441e6 = $(`<div id="html_2ed5f6d38299b2b85d1c637ca53441e6" style="width: 100.0%; height: 100.0%;"><strong>Albury</strong><br>Rainfall: 1.91</div>`)[0];
+                popup_7891c5498854d87fc050e804b1357781.setContent(html_2ed5f6d38299b2b85d1c637ca53441e6);
+            
+        
+
+        marker_4fb49bac903e7a880822b93bfa7a79f9.bindPopup(popup_7891c5498854d87fc050e804b1357781)
+        ;
+
+        
+    
+    
+            marker_4fb49bac903e7a880822b93bfa7a79f9.bindTooltip(
+                `<div>
+                     Albury
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fb49bac903e7a880822b93bfa7a79f9.setIcon(icon_5169187892a50b208aaa9ca666bd3e1f);
+            
+    
+            var marker_663c98fa5b5cdb8561cc0cf4bf04a455 = L.marker(
+                [-37.5623013, 143.8605645],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_f35623ad3dea4ab732a9e507340af702 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b64a125ce9384fc98237f5778090d209 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_426a856ac9ef2da80774e2b3564894e0 = $(`<div id="html_426a856ac9ef2da80774e2b3564894e0" style="width: 100.0%; height: 100.0%;"><strong>Ballarat</strong><br>Rainfall: 1.74</div>`)[0];
+                popup_b64a125ce9384fc98237f5778090d209.setContent(html_426a856ac9ef2da80774e2b3564894e0);
+            
+        
+
+        marker_663c98fa5b5cdb8561cc0cf4bf04a455.bindPopup(popup_b64a125ce9384fc98237f5778090d209)
+        ;
+
+        
+    
+    
+            marker_663c98fa5b5cdb8561cc0cf4bf04a455.bindTooltip(
+                `<div>
+                     Ballarat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_663c98fa5b5cdb8561cc0cf4bf04a455.setIcon(icon_f35623ad3dea4ab732a9e507340af702);
+            
+    
+            var marker_54ce90b0de8c4af36f4e2af8b6b8ae14 = L.marker(
+                [-36.7590183, 144.2826718],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_cb1318f146fdef96afdd60701a134091 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dec2fb11dd93ef5198de9c78e5ca415e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_462ececf9ec3b0028345f72befafd3dd = $(`<div id="html_462ececf9ec3b0028345f72befafd3dd" style="width: 100.0%; height: 100.0%;"><strong>Bendigo</strong><br>Rainfall: 1.62</div>`)[0];
+                popup_dec2fb11dd93ef5198de9c78e5ca415e.setContent(html_462ececf9ec3b0028345f72befafd3dd);
+            
+        
+
+        marker_54ce90b0de8c4af36f4e2af8b6b8ae14.bindPopup(popup_dec2fb11dd93ef5198de9c78e5ca415e)
+        ;
+
+        
+    
+    
+            marker_54ce90b0de8c4af36f4e2af8b6b8ae14.bindTooltip(
+                `<div>
+                     Bendigo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54ce90b0de8c4af36f4e2af8b6b8ae14.setIcon(icon_cb1318f146fdef96afdd60701a134091);
+            
+    
+            var marker_e3e9c291fe90a44ff6c56b49e4d180b8 = L.marker(
+                [-27.4689623, 153.0235009],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_def35724196cc958a7ff38d9d7762017 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6438661f99a205c9593dbfd519848bff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_967cad632a77256401711735f9689825 = $(`<div id="html_967cad632a77256401711735f9689825" style="width: 100.0%; height: 100.0%;"><strong>Brisbane</strong><br>Rainfall: 3.14</div>`)[0];
+                popup_6438661f99a205c9593dbfd519848bff.setContent(html_967cad632a77256401711735f9689825);
+            
+        
+
+        marker_e3e9c291fe90a44ff6c56b49e4d180b8.bindPopup(popup_6438661f99a205c9593dbfd519848bff)
+        ;
+
+        
+    
+    
+            marker_e3e9c291fe90a44ff6c56b49e4d180b8.bindTooltip(
+                `<div>
+                     Brisbane
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e3e9c291fe90a44ff6c56b49e4d180b8.setIcon(icon_def35724196cc958a7ff38d9d7762017);
+            
+    
+            var marker_4d4ae11bf2cfcee488e9f4aa240f5a6f = L.marker(
+                [-16.9206657, 145.7721854],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_38545018c0d3ac64dcc8958959cb6f85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36601ac4268c71e45e11ad5d07d1b021 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f6c8e28c9440fa74a1bae90a55b2657 = $(`<div id="html_0f6c8e28c9440fa74a1bae90a55b2657" style="width: 100.0%; height: 100.0%;"><strong>Cairns</strong><br>Rainfall: 5.74</div>`)[0];
+                popup_36601ac4268c71e45e11ad5d07d1b021.setContent(html_0f6c8e28c9440fa74a1bae90a55b2657);
+            
+        
+
+        marker_4d4ae11bf2cfcee488e9f4aa240f5a6f.bindPopup(popup_36601ac4268c71e45e11ad5d07d1b021)
+        ;
+
+        
+    
+    
+            marker_4d4ae11bf2cfcee488e9f4aa240f5a6f.bindTooltip(
+                `<div>
+                     Cairns
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d4ae11bf2cfcee488e9f4aa240f5a6f.setIcon(icon_38545018c0d3ac64dcc8958959cb6f85);
+            
+    
+            var marker_5ef23454bd01f4fac236b0ce7cecf07c = L.marker(
+                [-35.2975906, 149.1012676],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_9351cf0b384a5909b75712e6e2f38f7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_827b31756c48c787e77446d93b6fa57b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0c10c8e904da24705f40b1c2d9fdcfa = $(`<div id="html_d0c10c8e904da24705f40b1c2d9fdcfa" style="width: 100.0%; height: 100.0%;"><strong>Canberra</strong><br>Rainfall: 1.74</div>`)[0];
+                popup_827b31756c48c787e77446d93b6fa57b.setContent(html_d0c10c8e904da24705f40b1c2d9fdcfa);
+            
+        
+
+        marker_5ef23454bd01f4fac236b0ce7cecf07c.bindPopup(popup_827b31756c48c787e77446d93b6fa57b)
+        ;
+
+        
+    
+    
+            marker_5ef23454bd01f4fac236b0ce7cecf07c.bindTooltip(
+                `<div>
+                     Canberra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ef23454bd01f4fac236b0ce7cecf07c.setIcon(icon_9351cf0b384a5909b75712e6e2f38f7f);
+            
+    
+            var marker_6e37a0c8d811d3af9c7f207bdb88af50 = L.marker(
+                [-31.9666628, 145.3045054],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_c9714b8075a8987c3ae00dca7a6bbd6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da560bc43da5e361f9ce4237fc931c09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_defec97871884fea4ee3e02dc5aa1094 = $(`<div id="html_defec97871884fea4ee3e02dc5aa1094" style="width: 100.0%; height: 100.0%;"><strong>Cobar</strong><br>Rainfall: 1.13</div>`)[0];
+                popup_da560bc43da5e361f9ce4237fc931c09.setContent(html_defec97871884fea4ee3e02dc5aa1094);
+            
+        
+
+        marker_6e37a0c8d811d3af9c7f207bdb88af50.bindPopup(popup_da560bc43da5e361f9ce4237fc931c09)
+        ;
+
+        
+    
+    
+            marker_6e37a0c8d811d3af9c7f207bdb88af50.bindTooltip(
+                `<div>
+                     Cobar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e37a0c8d811d3af9c7f207bdb88af50.setIcon(icon_c9714b8075a8987c3ae00dca7a6bbd6b);
+            
+    
+            var marker_e8198ddbeddedf0b17abcbbec8e203a6 = L.marker(
+                [-37.895212, 141.2679429],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_731b19b836ec6bb07e6a304c92d54908 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe383af40cd80df56f75d5fa8f8e88ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47705d9aa3ab0e7fdac2c4ec8c69894d = $(`<div id="html_47705d9aa3ab0e7fdac2c4ec8c69894d" style="width: 100.0%; height: 100.0%;"><strong>Dartmoor</strong><br>Rainfall: 2.15</div>`)[0];
+                popup_fe383af40cd80df56f75d5fa8f8e88ee.setContent(html_47705d9aa3ab0e7fdac2c4ec8c69894d);
+            
+        
+
+        marker_e8198ddbeddedf0b17abcbbec8e203a6.bindPopup(popup_fe383af40cd80df56f75d5fa8f8e88ee)
+        ;
+
+        
+    
+    
+            marker_e8198ddbeddedf0b17abcbbec8e203a6.bindTooltip(
+                `<div>
+                     Dartmoor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e8198ddbeddedf0b17abcbbec8e203a6.setIcon(icon_731b19b836ec6bb07e6a304c92d54908);
+            
+    
+            var marker_ee6583fdd96068400efba02e2b500c96 = L.marker(
+                [-12.46044, 130.8410469],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_cb303bf5878fa83e7badc6d9da108340 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27eb115861b378d130e12d6e54a95f46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b973483d1e4d5f71b0cf8b0697af926c = $(`<div id="html_b973483d1e4d5f71b0cf8b0697af926c" style="width: 100.0%; height: 100.0%;"><strong>Darwin</strong><br>Rainfall: 5.09</div>`)[0];
+                popup_27eb115861b378d130e12d6e54a95f46.setContent(html_b973483d1e4d5f71b0cf8b0697af926c);
+            
+        
+
+        marker_ee6583fdd96068400efba02e2b500c96.bindPopup(popup_27eb115861b378d130e12d6e54a95f46)
+        ;
+
+        
+    
+    
+            marker_ee6583fdd96068400efba02e2b500c96.bindTooltip(
+                `<div>
+                     Darwin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee6583fdd96068400efba02e2b500c96.setIcon(icon_cb303bf5878fa83e7badc6d9da108340);
+            
+    
+            var marker_e081d9eedaa9a7e609adffd9c372e771 = L.marker(
+                [-28.0805, 153.4309187],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_90bf18238d799b413bf2a6993ef93a98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a7908d86e608562c32f4690159a0124 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_384ad034e1f19c3de7b83293a3ea5f4c = $(`<div id="html_384ad034e1f19c3de7b83293a3ea5f4c" style="width: 100.0%; height: 100.0%;"><strong>GoldCoast</strong><br>Rainfall: 3.77</div>`)[0];
+                popup_8a7908d86e608562c32f4690159a0124.setContent(html_384ad034e1f19c3de7b83293a3ea5f4c);
+            
+        
+
+        marker_e081d9eedaa9a7e609adffd9c372e771.bindPopup(popup_8a7908d86e608562c32f4690159a0124)
+        ;
+
+        
+    
+    
+            marker_e081d9eedaa9a7e609adffd9c372e771.bindTooltip(
+                `<div>
+                     GoldCoast
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e081d9eedaa9a7e609adffd9c372e771.setIcon(icon_90bf18238d799b413bf2a6993ef93a98);
+            
+    
+            var marker_d3184c56cc022e3f2184e35010ddcaeb = L.marker(
+                [-42.8825088, 147.3281233],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_5c8f652fb7b7dee476b5706152fcc82b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b26acfbb7f3bfd4aed67fac551fd7093 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_078bf22b581f03f4c8b5f3002308b76a = $(`<div id="html_078bf22b581f03f4c8b5f3002308b76a" style="width: 100.0%; height: 100.0%;"><strong>Hobart</strong><br>Rainfall: 1.60</div>`)[0];
+                popup_b26acfbb7f3bfd4aed67fac551fd7093.setContent(html_078bf22b581f03f4c8b5f3002308b76a);
+            
+        
+
+        marker_d3184c56cc022e3f2184e35010ddcaeb.bindPopup(popup_b26acfbb7f3bfd4aed67fac551fd7093)
+        ;
+
+        
+    
+    
+            marker_d3184c56cc022e3f2184e35010ddcaeb.bindTooltip(
+                `<div>
+                     Hobart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3184c56cc022e3f2184e35010ddcaeb.setIcon(icon_5c8f652fb7b7dee476b5706152fcc82b);
+            
+    
+            var marker_2bf55edf188b0bc5f4411b2b63776857 = L.marker(
+                [-14.4646157, 132.2635993],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_da4eaad06eed431cec2cda14e233eccc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c9009bf6bade2c7f11dd10105f8176f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bc976b0e002834034d49e07876ef4de = $(`<div id="html_2bc976b0e002834034d49e07876ef4de" style="width: 100.0%; height: 100.0%;"><strong>Katherine</strong><br>Rainfall: 3.20</div>`)[0];
+                popup_7c9009bf6bade2c7f11dd10105f8176f.setContent(html_2bc976b0e002834034d49e07876ef4de);
+            
+        
+
+        marker_2bf55edf188b0bc5f4411b2b63776857.bindPopup(popup_7c9009bf6bade2c7f11dd10105f8176f)
+        ;
+
+        
+    
+    
+            marker_2bf55edf188b0bc5f4411b2b63776857.bindTooltip(
+                `<div>
+                     Katherine
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bf55edf188b0bc5f4411b2b63776857.setIcon(icon_da4eaad06eed431cec2cda14e233eccc);
+            
+    
+            var marker_48bc5220e38708df37baab7063a4ee72 = L.marker(
+                [-41.4340813, 147.1373496],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_37c61212c9e9f471bfda7a7a9683a76b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_454021a421650c606ff0805d8e1975d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c36a204234500736a294446690fc851 = $(`<div id="html_8c36a204234500736a294446690fc851" style="width: 100.0%; height: 100.0%;"><strong>Launceston</strong><br>Rainfall: 2.01</div>`)[0];
+                popup_454021a421650c606ff0805d8e1975d0.setContent(html_8c36a204234500736a294446690fc851);
+            
+        
+
+        marker_48bc5220e38708df37baab7063a4ee72.bindPopup(popup_454021a421650c606ff0805d8e1975d0)
+        ;
+
+        
+    
+    
+            marker_48bc5220e38708df37baab7063a4ee72.bindTooltip(
+                `<div>
+                     Launceston
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48bc5220e38708df37baab7063a4ee72.setIcon(icon_37c61212c9e9f471bfda7a7a9683a76b);
+            
+    
+            var marker_95de824bdad1329593338f4846c34be3 = L.marker(
+                [-37.8142454, 144.9631732],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_a5bbba178e0246987b22bbfd331467b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ce37c8dbd98eba3a0e75b672011865e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7b854076a9361b9adef6280bd675497 = $(`<div id="html_a7b854076a9361b9adef6280bd675497" style="width: 100.0%; height: 100.0%;"><strong>Melbourne</strong><br>Rainfall: 1.87</div>`)[0];
+                popup_0ce37c8dbd98eba3a0e75b672011865e.setContent(html_a7b854076a9361b9adef6280bd675497);
+            
+        
+
+        marker_95de824bdad1329593338f4846c34be3.bindPopup(popup_0ce37c8dbd98eba3a0e75b672011865e)
+        ;
+
+        
+    
+    
+            marker_95de824bdad1329593338f4846c34be3.bindTooltip(
+                `<div>
+                     Melbourne
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95de824bdad1329593338f4846c34be3.setIcon(icon_a5bbba178e0246987b22bbfd331467b3);
+            
+    
+            var marker_1b913139d5ecab93e74ea064c435fa79 = L.marker(
+                [-34.195274, 142.1503146],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_04f989904b3f76a3b685a67346ab316d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12cd1651da372ad073cc236e1c4587b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cffcd59684508d53abd6c6966aef175 = $(`<div id="html_6cffcd59684508d53abd6c6966aef175" style="width: 100.0%; height: 100.0%;"><strong>Mildura</strong><br>Rainfall: 0.95</div>`)[0];
+                popup_12cd1651da372ad073cc236e1c4587b1.setContent(html_6cffcd59684508d53abd6c6966aef175);
+            
+        
+
+        marker_1b913139d5ecab93e74ea064c435fa79.bindPopup(popup_12cd1651da372ad073cc236e1c4587b1)
+        ;
+
+        
+    
+    
+            marker_1b913139d5ecab93e74ea064c435fa79.bindTooltip(
+                `<div>
+                     Mildura
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1b913139d5ecab93e74ea064c435fa79.setIcon(icon_04f989904b3f76a3b685a67346ab316d);
+            
+    
+            var marker_70d795487409d4f7cdf42c231b8e92b8 = L.marker(
+                [-29.4617202, 149.8407153],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_ded4ff1236e71e8b1d1530307d9df5c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed206a92c3b49218d058cde1d38153f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_557934341cb043e5a06abc363bd12fd2 = $(`<div id="html_557934341cb043e5a06abc363bd12fd2" style="width: 100.0%; height: 100.0%;"><strong>Moree</strong><br>Rainfall: 1.63</div>`)[0];
+                popup_ed206a92c3b49218d058cde1d38153f7.setContent(html_557934341cb043e5a06abc363bd12fd2);
+            
+        
+
+        marker_70d795487409d4f7cdf42c231b8e92b8.bindPopup(popup_ed206a92c3b49218d058cde1d38153f7)
+        ;
+
+        
+    
+    
+            marker_70d795487409d4f7cdf42c231b8e92b8.bindTooltip(
+                `<div>
+                     Moree
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70d795487409d4f7cdf42c231b8e92b8.setIcon(icon_ded4ff1236e71e8b1d1530307d9df5c3);
+            
+    
+            var marker_f7d963851186004c863589972cf51a2c = L.marker(
+                [-32.9272881, 151.7812534],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_efb21347e2645bca1ff01b35ac1087eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a251c59c52f92d781ec109a6ff74cc9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa428c27bbc251d5c893f1f182c88b01 = $(`<div id="html_aa428c27bbc251d5c893f1f182c88b01" style="width: 100.0%; height: 100.0%;"><strong>Newcastle</strong><br>Rainfall: 3.18</div>`)[0];
+                popup_a251c59c52f92d781ec109a6ff74cc9b.setContent(html_aa428c27bbc251d5c893f1f182c88b01);
+            
+        
+
+        marker_f7d963851186004c863589972cf51a2c.bindPopup(popup_a251c59c52f92d781ec109a6ff74cc9b)
+        ;
+
+        
+    
+    
+            marker_f7d963851186004c863589972cf51a2c.bindTooltip(
+                `<div>
+                     Newcastle
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7d963851186004c863589972cf51a2c.setIcon(icon_efb21347e2645bca1ff01b35ac1087eb);
+            
+    
+            var marker_546183f94e89399dc897e93b8132e46c = L.marker(
+                [-35.4325403, 141.2833862],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_50fd72af7596475843058e3a423adc40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f465a77d53ec6f14b4b7f81eebf163a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcc421580badbed8f4543fda040045a2 = $(`<div id="html_dcc421580badbed8f4543fda040045a2" style="width: 100.0%; height: 100.0%;"><strong>Nhil</strong><br>Rainfall: 0.93</div>`)[0];
+                popup_0f465a77d53ec6f14b4b7f81eebf163a.setContent(html_dcc421580badbed8f4543fda040045a2);
+            
+        
+
+        marker_546183f94e89399dc897e93b8132e46c.bindPopup(popup_0f465a77d53ec6f14b4b7f81eebf163a)
+        ;
+
+        
+    
+    
+            marker_546183f94e89399dc897e93b8132e46c.bindTooltip(
+                `<div>
+                     Nhil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_546183f94e89399dc897e93b8132e46c.setIcon(icon_50fd72af7596475843058e3a423adc40);
+            
+    
+            var marker_177cdf3745a90ebd653a594ecc5d5cf4 = L.marker(
+                [-34.4693354, 138.9939006],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_0144c99cfee2388b13a8ed8632efa3ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cb90582ac843be2fc237173fb838eae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46c28c353777a0496a95924ceb4d003b = $(`<div id="html_46c28c353777a0496a95924ceb4d003b" style="width: 100.0%; height: 100.0%;"><strong>Nuriootpa</strong><br>Rainfall: 1.39</div>`)[0];
+                popup_7cb90582ac843be2fc237173fb838eae.setContent(html_46c28c353777a0496a95924ceb4d003b);
+            
+        
+
+        marker_177cdf3745a90ebd653a594ecc5d5cf4.bindPopup(popup_7cb90582ac843be2fc237173fb838eae)
+        ;
+
+        
+    
+    
+            marker_177cdf3745a90ebd653a594ecc5d5cf4.bindTooltip(
+                `<div>
+                     Nuriootpa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_177cdf3745a90ebd653a594ecc5d5cf4.setIcon(icon_0144c99cfee2388b13a8ed8632efa3ca);
+            
+    
+            var marker_633df89ecc01f84b9dea4c53e39992bd = L.marker(
+                [-33.7511954, 150.6941711],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_1c425322f4d081c2c6717f59fdc8de80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f83a5fa0f2109519e8a67bd05124271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba1f5f517f81e3f0e275353c9410f7ec = $(`<div id="html_ba1f5f517f81e3f0e275353c9410f7ec" style="width: 100.0%; height: 100.0%;"><strong>Penrith</strong><br>Rainfall: 2.18</div>`)[0];
+                popup_4f83a5fa0f2109519e8a67bd05124271.setContent(html_ba1f5f517f81e3f0e275353c9410f7ec);
+            
+        
+
+        marker_633df89ecc01f84b9dea4c53e39992bd.bindPopup(popup_4f83a5fa0f2109519e8a67bd05124271)
+        ;
+
+        
+    
+    
+            marker_633df89ecc01f84b9dea4c53e39992bd.bindTooltip(
+                `<div>
+                     Penrith
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_633df89ecc01f84b9dea4c53e39992bd.setIcon(icon_1c425322f4d081c2c6717f59fdc8de80);
+            
+    
+            var marker_36205fa3dd5b85c8ad4b9daefdfc84d6 = L.marker(
+                [-31.9558967, 115.8605784],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_f73479408f71e00d24b395ba1944a8a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfa511e29edcab3d2726b7c74cc81b31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_495cada51f580de251590114a965a1a6 = $(`<div id="html_495cada51f580de251590114a965a1a6" style="width: 100.0%; height: 100.0%;"><strong>Perth</strong><br>Rainfall: 1.91</div>`)[0];
+                popup_dfa511e29edcab3d2726b7c74cc81b31.setContent(html_495cada51f580de251590114a965a1a6);
+            
+        
+
+        marker_36205fa3dd5b85c8ad4b9daefdfc84d6.bindPopup(popup_dfa511e29edcab3d2726b7c74cc81b31)
+        ;
+
+        
+    
+    
+            marker_36205fa3dd5b85c8ad4b9daefdfc84d6.bindTooltip(
+                `<div>
+                     Perth
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_36205fa3dd5b85c8ad4b9daefdfc84d6.setIcon(icon_f73479408f71e00d24b395ba1944a8a0);
+            
+    
+            var marker_3d41de4bddf14d1d5899e841e3ad150d = L.marker(
+                [-38.3456231, 141.6042304],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_580b32b9ab74d7e1cced530df5a4a2e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f20918b93f0d6b3e667f3aaf43bcd1e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d0a5f74dd8614c2b8c777a1d211f0ae = $(`<div id="html_2d0a5f74dd8614c2b8c777a1d211f0ae" style="width: 100.0%; height: 100.0%;"><strong>Portland</strong><br>Rainfall: 2.53</div>`)[0];
+                popup_f20918b93f0d6b3e667f3aaf43bcd1e9.setContent(html_2d0a5f74dd8614c2b8c777a1d211f0ae);
+            
+        
+
+        marker_3d41de4bddf14d1d5899e841e3ad150d.bindPopup(popup_f20918b93f0d6b3e667f3aaf43bcd1e9)
+        ;
+
+        
+    
+    
+            marker_3d41de4bddf14d1d5899e841e3ad150d.bindTooltip(
+                `<div>
+                     Portland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d41de4bddf14d1d5899e841e3ad150d.setIcon(icon_580b32b9ab74d7e1cced530df5a4a2e8);
+            
+    
+            var marker_23d4fa510bf7ecebc088e0092378bcd9 = L.marker(
+                [-37.80745, 144.9907213],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_54aed8f138164ed0c53301622b21e6af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eca0f0c5092e7d4bd67465b926c69b3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6f3717f2849fd41d7b03c83991d37ce = $(`<div id="html_c6f3717f2849fd41d7b03c83991d37ce" style="width: 100.0%; height: 100.0%;"><strong>Richmond</strong><br>Rainfall: 2.14</div>`)[0];
+                popup_eca0f0c5092e7d4bd67465b926c69b3c.setContent(html_c6f3717f2849fd41d7b03c83991d37ce);
+            
+        
+
+        marker_23d4fa510bf7ecebc088e0092378bcd9.bindPopup(popup_eca0f0c5092e7d4bd67465b926c69b3c)
+        ;
+
+        
+    
+    
+            marker_23d4fa510bf7ecebc088e0092378bcd9.bindTooltip(
+                `<div>
+                     Richmond
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_23d4fa510bf7ecebc088e0092378bcd9.setIcon(icon_54aed8f138164ed0c53301622b21e6af);
+            
+    
+            var marker_c1283f8f34a58a7d203cc920e51bc38f = L.marker(
+                [-38.1094463, 147.0656717],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_b03dcec99940f5667519747c2c686210 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f196acb990a7c5d57a131b6413b9c19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be51b427477156f6783c44ee2898bae8 = $(`<div id="html_be51b427477156f6783c44ee2898bae8" style="width: 100.0%; height: 100.0%;"><strong>Sale</strong><br>Rainfall: 1.51</div>`)[0];
+                popup_3f196acb990a7c5d57a131b6413b9c19.setContent(html_be51b427477156f6783c44ee2898bae8);
+            
+        
+
+        marker_c1283f8f34a58a7d203cc920e51bc38f.bindPopup(popup_3f196acb990a7c5d57a131b6413b9c19)
+        ;
+
+        
+    
+    
+            marker_c1283f8f34a58a7d203cc920e51bc38f.bindTooltip(
+                `<div>
+                     Sale
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1283f8f34a58a7d203cc920e51bc38f.setIcon(icon_b03dcec99940f5667519747c2c686210);
+            
+    
+            var marker_096da39b9e82e164257beed7ffe6d5d2 = L.marker(
+                [-33.8698439, 151.2082848],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_9cadbdb74aed770b3d227c60ebb72351 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3871a8f7754a1b6b596288dcbb5d133f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4bdfddc0e69710cfce824f3d7dc9d08 = $(`<div id="html_d4bdfddc0e69710cfce824f3d7dc9d08" style="width: 100.0%; height: 100.0%;"><strong>Sydney</strong><br>Rainfall: 3.32</div>`)[0];
+                popup_3871a8f7754a1b6b596288dcbb5d133f.setContent(html_d4bdfddc0e69710cfce824f3d7dc9d08);
+            
+        
+
+        marker_096da39b9e82e164257beed7ffe6d5d2.bindPopup(popup_3871a8f7754a1b6b596288dcbb5d133f)
+        ;
+
+        
+    
+    
+            marker_096da39b9e82e164257beed7ffe6d5d2.bindTooltip(
+                `<div>
+                     Sydney
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_096da39b9e82e164257beed7ffe6d5d2.setIcon(icon_9cadbdb74aed770b3d227c60ebb72351);
+            
+    
+            var marker_ba012feb89d28b076ec062463310c406 = L.marker(
+                [-19.2569391, 146.8239537],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_6675eca46b94333a943e0e75082155c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_601f03c7403aee3068dd4bfcf65bb122 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52a1e6287d43f293d5d0350bb67d1006 = $(`<div id="html_52a1e6287d43f293d5d0350bb67d1006" style="width: 100.0%; height: 100.0%;"><strong>Townsville</strong><br>Rainfall: 3.49</div>`)[0];
+                popup_601f03c7403aee3068dd4bfcf65bb122.setContent(html_52a1e6287d43f293d5d0350bb67d1006);
+            
+        
+
+        marker_ba012feb89d28b076ec062463310c406.bindPopup(popup_601f03c7403aee3068dd4bfcf65bb122)
+        ;
+
+        
+    
+    
+            marker_ba012feb89d28b076ec062463310c406.bindTooltip(
+                `<div>
+                     Townsville
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba012feb89d28b076ec062463310c406.setIcon(icon_6675eca46b94333a943e0e75082155c0);
+            
+    
+            var marker_b258f3972f4d3a6c401795bda4d09def = L.marker(
+                [-35.4209771, 149.0921341],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_60fc083d90457fbb55698bd8a32dcacd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3684217321c5bdf4bd05ccb168741a62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b8b3cd326bd394ab96e4189f090d538 = $(`<div id="html_9b8b3cd326bd394ab96e4189f090d538" style="width: 100.0%; height: 100.0%;"><strong>Tuggeranong</strong><br>Rainfall: 2.16</div>`)[0];
+                popup_3684217321c5bdf4bd05ccb168741a62.setContent(html_9b8b3cd326bd394ab96e4189f090d538);
+            
+        
+
+        marker_b258f3972f4d3a6c401795bda4d09def.bindPopup(popup_3684217321c5bdf4bd05ccb168741a62)
+        ;
+
+        
+    
+    
+            marker_b258f3972f4d3a6c401795bda4d09def.bindTooltip(
+                `<div>
+                     Tuggeranong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b258f3972f4d3a6c401795bda4d09def.setIcon(icon_60fc083d90457fbb55698bd8a32dcacd);
+            
+    
+            var marker_85ac5a61fce9f6515d4ea04eedabfc5c = L.marker(
+                [-25.344857, 131.0325171],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_8e7fd3ba31356968391fabca42d568e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5b43870399958227aabf7de2c71b110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e88823ae4bf5e0e303cf16acda2b99b = $(`<div id="html_7e88823ae4bf5e0e303cf16acda2b99b" style="width: 100.0%; height: 100.0%;"><strong>Uluru</strong><br>Rainfall: 0.78</div>`)[0];
+                popup_b5b43870399958227aabf7de2c71b110.setContent(html_7e88823ae4bf5e0e303cf16acda2b99b);
+            
+        
+
+        marker_85ac5a61fce9f6515d4ea04eedabfc5c.bindPopup(popup_b5b43870399958227aabf7de2c71b110)
+        ;
+
+        
+    
+    
+            marker_85ac5a61fce9f6515d4ea04eedabfc5c.bindTooltip(
+                `<div>
+                     Uluru
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_85ac5a61fce9f6515d4ea04eedabfc5c.setIcon(icon_8e7fd3ba31356968391fabca42d568e4);
+            
+    
+            var marker_fb1fb1b3a414636fdf11f4af2693d069 = L.marker(
+                [-34.9776796, 116.7310063],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_2587a0181cfa74ea27501856bc32fe1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb9aa2809c6b0612ceffdb66a7848c4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_123b736d9c9e5f07c7adf0d1afa377c0 = $(`<div id="html_123b736d9c9e5f07c7adf0d1afa377c0" style="width: 100.0%; height: 100.0%;"><strong>Walpole</strong><br>Rainfall: 2.91</div>`)[0];
+                popup_cb9aa2809c6b0612ceffdb66a7848c4d.setContent(html_123b736d9c9e5f07c7adf0d1afa377c0);
+            
+        
+
+        marker_fb1fb1b3a414636fdf11f4af2693d069.bindPopup(popup_cb9aa2809c6b0612ceffdb66a7848c4d)
+        ;
+
+        
+    
+    
+            marker_fb1fb1b3a414636fdf11f4af2693d069.bindTooltip(
+                `<div>
+                     Walpole
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb1fb1b3a414636fdf11f4af2693d069.setIcon(icon_2587a0181cfa74ea27501856bc32fe1e);
+            
+    
+            var marker_a9a70703ca80bba463c2d0918f101959 = L.marker(
+                [-37.7109468, 145.0837808],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_b2cbf3d32d6cab59b8f45b8b89ee1fb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23c9c3c934fdd27431d6582e548a84cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95daac54074c5dfb3d77b6794ec83e4e = $(`<div id="html_95daac54074c5dfb3d77b6794ec83e4e" style="width: 100.0%; height: 100.0%;"><strong>Watsonia</strong><br>Rainfall: 1.86</div>`)[0];
+                popup_23c9c3c934fdd27431d6582e548a84cd.setContent(html_95daac54074c5dfb3d77b6794ec83e4e);
+            
+        
+
+        marker_a9a70703ca80bba463c2d0918f101959.bindPopup(popup_23c9c3c934fdd27431d6582e548a84cd)
+        ;
+
+        
+    
+    
+            marker_a9a70703ca80bba463c2d0918f101959.bindTooltip(
+                `<div>
+                     Watsonia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9a70703ca80bba463c2d0918f101959.setIcon(icon_b2cbf3d32d6cab59b8f45b8b89ee1fb6);
+            
+    
+            var marker_f81500fe557cdb319069faa3eae96093 = L.marker(
+                [-32.815, 151.8427778],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_32aac15796114b904667d068346d921b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d3e26467652f55213d61749c1bc530e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36708b42d1efdf3437a36e041c62fbdc = $(`<div id="html_36708b42d1efdf3437a36e041c62fbdc" style="width: 100.0%; height: 100.0%;"><strong>Williamtown</strong><br>Rainfall: 3.59</div>`)[0];
+                popup_3d3e26467652f55213d61749c1bc530e.setContent(html_36708b42d1efdf3437a36e041c62fbdc);
+            
+        
+
+        marker_f81500fe557cdb319069faa3eae96093.bindPopup(popup_3d3e26467652f55213d61749c1bc530e)
+        ;
+
+        
+    
+    
+            marker_f81500fe557cdb319069faa3eae96093.bindTooltip(
+                `<div>
+                     Williamtown
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f81500fe557cdb319069faa3eae96093.setIcon(icon_32aac15796114b904667d068346d921b);
+            
+    
+            var marker_57fb122f2f2efbc3b424b44cbb99731d = L.marker(
+                [-34.0263348, 115.1004768],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_c4d10e38b838a744ddecf526f91c10a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a55e1c8e7108cda9a59894e6b619e545 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13e0610f893f507607d690805cb1791e = $(`<div id="html_13e0610f893f507607d690805cb1791e" style="width: 100.0%; height: 100.0%;"><strong>Witchcliffe</strong><br>Rainfall: 2.90</div>`)[0];
+                popup_a55e1c8e7108cda9a59894e6b619e545.setContent(html_13e0610f893f507607d690805cb1791e);
+            
+        
+
+        marker_57fb122f2f2efbc3b424b44cbb99731d.bindPopup(popup_a55e1c8e7108cda9a59894e6b619e545)
+        ;
+
+        
+    
+    
+            marker_57fb122f2f2efbc3b424b44cbb99731d.bindTooltip(
+                `<div>
+                     Witchcliffe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57fb122f2f2efbc3b424b44cbb99731d.setIcon(icon_c4d10e38b838a744ddecf526f91c10a9);
+            
+    
+            var marker_ca8f192953b6099cce23e6e064a5739e = L.marker(
+                [-34.4243941, 150.89385],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_98d80ee3844e7c8b976a616fa1656cac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0abd04f0e2aa46e6b9817e3625c5da32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f3456ac1a78c8e9a4f15cc46cc7516a = $(`<div id="html_2f3456ac1a78c8e9a4f15cc46cc7516a" style="width: 100.0%; height: 100.0%;"><strong>Wollongong</strong><br>Rainfall: 3.59</div>`)[0];
+                popup_0abd04f0e2aa46e6b9817e3625c5da32.setContent(html_2f3456ac1a78c8e9a4f15cc46cc7516a);
+            
+        
+
+        marker_ca8f192953b6099cce23e6e064a5739e.bindPopup(popup_0abd04f0e2aa46e6b9817e3625c5da32)
+        ;
+
+        
+    
+    
+            marker_ca8f192953b6099cce23e6e064a5739e.bindTooltip(
+                `<div>
+                     Wollongong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca8f192953b6099cce23e6e064a5739e.setIcon(icon_98d80ee3844e7c8b976a616fa1656cac);
+            
+    
+            var marker_113b790ccaa3ed7bf0903b2a59fb101a = L.marker(
+                [-31.1999142, 136.8253532],
+                {
+}
+            ).addTo(map_7f15112ac3df42fde7a9d22a725e724f);
+        
+    
+            var icon_7c78a0e0c95bfb932324cafcd61a6af8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "map-marker",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d19cb3292f3aa2cf4b3e57ccf9d8063 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d202f8e6e659eb4cba16f06c504cdd8 = $(`<div id="html_0d202f8e6e659eb4cba16f06c504cdd8" style="width: 100.0%; height: 100.0%;"><strong>Woomera</strong><br>Rainfall: 0.49</div>`)[0];
+                popup_5d19cb3292f3aa2cf4b3e57ccf9d8063.setContent(html_0d202f8e6e659eb4cba16f06c504cdd8);
+            
+        
+
+        marker_113b790ccaa3ed7bf0903b2a59fb101a.bindPopup(popup_5d19cb3292f3aa2cf4b3e57ccf9d8063)
+        ;
+
+        
+    
+    
+            marker_113b790ccaa3ed7bf0903b2a59fb101a.bindTooltip(
+                `<div>
+                     Woomera
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_113b790ccaa3ed7bf0903b2a59fb101a.setIcon(icon_7c78a0e0c95bfb932324cafcd61a6af8);
+            
+</script>
+</html>
